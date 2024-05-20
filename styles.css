@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    background-image: linear-gradient(to right, black , red);
+}
+
+.nav-items ul{
+    margin: 0px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items ul li{
+   margin: 0px 20px;
+   list-style-type: none;
+   color: white;
+   padding: 20px;
+   transition: 1s;
+}
+.nav-items ul li:hover{
+    border: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #FF7F3E;
+    border-radius: 30px;
+}
+
+/* hero section */
+
+.heroimg{
+    background-image: url(./pexels-ene-marius-241207761-20044626.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroimg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button{
+    padding: 20px;
+    color: white;
+    background-color:#FF7F3E;
+    background: rgba(ff,ff,ff,0.9);
+    border: none;
+}
+button{
+    padding: 20px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    background-color: #05acfa;
+    font-size:x-large;
+    color: white;
+    z-index: 1;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: white;
+    color: #05acfa;
+}
+
+/* services */
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tinting{
+    border: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 300px;
+    border: #05acfa;
+    padding: 30px;
+    margin-top: 100px;
+}
+.services-img{
+    height: 300px;
+    width: 400px;
+}
+.services-img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.tinting h2{
+    margin: 20px;
+}
+
+/* Footer */
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, black , red);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.instagram{
+    color: white;
+    margin-left: 500px;
+}
+.tiktok{
+    color: white;
+    margin-right: 500px;
+}
+.tiktoklink{
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .navbar{
+        height: 70px;
+    }
+
+    .nav-logo-img{
+        height: 90px;
+    }
+
+    .nav-items ul li{
+        margin: 0px 7px;
+    }
+    button{
+        padding: 15px;
+        width: 315px;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .services-img{
+        height: 200px;
+        width: 300px;
+    }
+    .instagram{
+        margin-left: 100px;
+    }
+    .tiktok{
+        margin-right: 100px;
+    }
+    .tinting{
+        margin-top: 30px;
+    }
+}
